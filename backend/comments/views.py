@@ -20,7 +20,7 @@ def get_comments_by_video_id(request, video_id): #added video_id param to match 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def post_comment(request):
-    serializer = CommentSerializer(data=request.data)
+    serializer = CommentSerializer(data=request.data) #serialize all data coming in to match model.
     if serializer.is_valid():
         serializer.save(user=request.user)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -29,7 +29,7 @@ def post_comment(request):
 @api_view(['PUT'])
 @permission_classes([IsAuthenticated])
 def update_comment(request, pk):
-    comment = get_object_or_404(Comment, pk=pk)
+    comment = get_object_or_404(Comment, pk=pk) #checking to make sure the pk matches for the update
     serializer = CommentSerializer(comment, data=request.data, partial=True)
     serializer.is_valid(raise_exception=True)
     serializer.save()
