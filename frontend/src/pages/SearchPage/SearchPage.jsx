@@ -1,6 +1,7 @@
-import SearchBar from "../SearchBar/SearchBar";
+import SearchBar from "../../components/SearchBar/SearchBar";
 import axios from "axios";
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
+import VideoDisplay from "../../components/VideoDisplay/VideoDisplay";
 
 
 
@@ -21,6 +22,7 @@ const SearchPage = ({}) => {
     return ( 
         <div>
             <SearchBar videos={videos} getVideos={getVideos} setSearch={setSearch}/>
+            <VideoDisplay videos={videos}/>
         </div>
      );
 }

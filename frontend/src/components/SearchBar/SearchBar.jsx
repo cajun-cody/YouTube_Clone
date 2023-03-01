@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 
 
 //Component to allow a user to search for a video
+//The 3 parameters are needed to be referenced later in the return
 const SearchBar = ({getVideos, search, setSearch}) => {
 
     function handlesubmit(event){
