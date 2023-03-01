@@ -2,10 +2,10 @@
 
 
 //Component to display video that will be played in VideoPage
-const VideoPlayer = ({ video }) => {
-  const source = `https://www.youtube.com/embed/${video.id.videoId}`;
-  return (
-    <div>
+const VideoPlayer = ({ videoId , video }) => {
+  const source = `https://www.youtube.com/embed/${videoId}`;
+  return (<>
+      <div>
       <iframe
         id="ytplayer"
         type="text/html"
@@ -15,6 +15,12 @@ const VideoPlayer = ({ video }) => {
         frameborder="0"
       ></iframe>
     </div>
+    <div>
+      <h3>{video.snippet.title}</h3>
+    </div>
+
+  </>
+
   );
 };
 

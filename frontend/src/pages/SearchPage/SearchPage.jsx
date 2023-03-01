@@ -5,7 +5,7 @@ import VideoDisplay from "../../components/VideoDisplay/VideoDisplay";
 
 
 
-//Component to display a search form 
+//Page to display searchbar and searched videos 
 const SearchPage = ({}) => {
     //1st const to show 6 videos on searchpage before searching
     //2nd const to set state for videos after search
