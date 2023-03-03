@@ -16,7 +16,8 @@ const VideoPlayer = ({ videoId , video }) => {
       ></iframe>
     </div>
     <div>
-      <h3>{video.snippet.title}</h3>
+      <h3>{video?.snippet.title}</h3>
+
     </div>
 
   </>

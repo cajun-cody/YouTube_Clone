@@ -3,11 +3,19 @@ import ReplyList from "../ReplyList/ReplyList";
 
 
 //Comment to display a comment to a video with any replies to that comment
-const Comment = ({}) => {
+const Comment = ({ comment }) => {
     return ( 
         <div>
-            <ReplyList/>
-            <ReplyForm/>
+            <div>
+                <h4>{comment.username}: </h4>
+                <p>{comment.text}</p>
+            </div>
+            <div>
+                <ReplyList/>
+            </div>
+            <div>
+                <ReplyForm/>  
+            </div>
         </div>
      );
 }
