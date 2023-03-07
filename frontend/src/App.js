@@ -32,11 +32,11 @@ function App() {
           element={
             <PrivateRoute>
               <HomePage />
-            </PrivateRoute>
+            </PrivateRoute> 
           }
         />
         <Route path='/search' element={<SearchPage/>} />
-        <Route path="/video/:videoId" element={<VideoPage/>} />
+        <Route path="/video/:videoId" element={<PrivateRoute> <VideoPage/> </PrivateRoute>}/> 
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>

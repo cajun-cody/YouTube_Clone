@@ -1,10 +1,13 @@
 
 
 //Component to display a reply to a comment
-const Reply = ({}) => {
+const Reply = ({ reply }) => {
     return ( 
         <div>
-            Test
+            <div>
+                <h4>{reply.username}: </h4>
+                <p>{reply.text}</p>
+            </div>
         </div>
      );
 }
