@@ -3,6 +3,7 @@ import VideoPlayer from "../../components/VideoPlayer/VideoPlayer"
 import axios from "axios";
 import React, {useState} from "react";
 import CommentList from "../../components/CommentList/CommentList";
+import CommentForm from "../../components/CommentForm/CommentForm";
 /* import CommentList from "../CommentList/CommentList";
 import CommentForm from "../CommentForm/CommentForm";
 import RelatedVideos from "../RelatedVideos/RelatedVideos"; */
@@ -25,13 +26,15 @@ const VideoPage = (props) => {
         <div>
             <button onClick={()=> getVideo()}>Get Video By Id</button>
             <VideoPlayer videoId={videoId} video={video}/>
+            <CommentForm videoId={videoId} video={video}/>
             <CommentList videoId={videoId} video={video}/>
+
         </div>
      );
 }
  
 export default VideoPage;           
 
-        /* <CommentForm/>
+        /* 
             
             <RelatedVideos/> */
