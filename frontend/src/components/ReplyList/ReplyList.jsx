@@ -23,7 +23,6 @@ const ReplyList = ({comment_id}) => {
 
     return ( 
         <div>
-            <button onClick={getAllReplies}>Get all Replies</button>
             {replies&&replies.map( item => <Reply key={item.id} reply={item}/>)}
         </div>
      );

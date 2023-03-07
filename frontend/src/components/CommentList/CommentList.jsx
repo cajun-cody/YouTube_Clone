@@ -20,7 +20,6 @@ const CommentList = ({videoId}) => {
 
     return ( 
         <div>
-            <button onClick={getAllComments}>Get all comments</button>
             {comments&&comments.map( item => <Comment key={item.id}comment={item}/>)}
         </div>
 

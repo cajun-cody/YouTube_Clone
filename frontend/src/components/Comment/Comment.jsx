@@ -14,7 +14,7 @@ const Comment = ({ comment }) => {
                 <ReplyList comment_id = {comment.id}/>
             </div>
             <div>
-                <ReplyForm/>  
+                <ReplyForm comment_id={comment.id}/>  
             </div>
         </div>
      );
