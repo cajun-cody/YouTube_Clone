@@ -10,7 +10,7 @@ const VideoPresenter = ({video , dontShowDescription}) => {
             </div>
             <div>
                 <h3>{video.snippet.title}</h3>
-            {!dontShowDescription &&<p>{video.snippet.description}</p>}
+            {!dontShowDescription&&<p>{video.snippet.description}</p>}
             </div>
         </div>
      );

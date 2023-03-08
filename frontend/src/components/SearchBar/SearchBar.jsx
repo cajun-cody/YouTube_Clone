@@ -10,6 +10,7 @@ const SearchBar = ({getVideos, search, setSearch}) => {
         getVideos();
     }
 
+    /* useEffect(() => getVideos(), [search]) */
 
     return ( 
         <form onSubmit={handlesubmit}>

@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import axios from "axios";
+import { Link } from "react-router-dom";
+/* import Assets from "./Assets"; */
 
 
 const HomePage = () => {
@@ -28,16 +30,22 @@ const HomePage = () => {
   }, [token]);
   return (
     <div className="container">
-      <h1>Home Page for {user.username}!</h1>
-      {cars &&
-        cars.map((car) => (
-          <p key={car.id}>
-            {car.year} {car.model} {car.make}
-          </p>
-        ))}
+      <h1 class="font-italic">Welcome to RouxTube {user.username}!</h1>
+      <h3>Click below to see what's cookin!!</h3>
+      <button type="button">
+        <img src="GumboPot.png" alt="pot" />
+      </button>
     </div>
 
   );
 };
 
 export default HomePage;
+
+
+      // {cars &&
+      //   cars.map((car) => (
+      //     <p key={car.id}>
+      //       {car.year} {car.model} {car.make}
+      //     </p>
+      //   ))}

@@ -6,10 +6,11 @@ ul {
 
 li {
   font-size: 1.25rem;
+  align-self: center;
 }
 
 .navBar {
-  background: steelblue;
+  background: rgb(0, 0, 0);
   box-shadow: 4px 2px 5px gray;
   color: white;
   margin-bottom: 2rem;
@@ -21,15 +22,20 @@ li {
   border: 2px solid white;
   color: white;
   padding: 0.4rem 0.5rem;
+  text-shadow: 2px 2px 5px red;
+  box-shadow: 2px 2px 5px red;
+  font-style: italic;
 }
 
 .navBar button:hover {
   background: white;
-  color: steelblue;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 
 .brand {
   cursor: pointer;
   font-size: 2rem;
+  font-style: italic;
+  text-shadow: 2px 2px 5px red;
 }
