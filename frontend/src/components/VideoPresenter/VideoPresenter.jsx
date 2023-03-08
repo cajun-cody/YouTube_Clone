@@ -2,7 +2,7 @@
 
 
 //Component to display the image, title and description of a video
-const VideoPresenter = ({video}) => {
+const VideoPresenter = ({video , dontShowDescription}) => {
     return ( 
         <div>
             <div>
@@ -10,7 +10,7 @@ const VideoPresenter = ({video}) => {
             </div>
             <div>
                 <h3>{video.snippet.title}</h3>
-                <p>{video.snippet.description}</p>
+            {!dontShowDescription &&<p>{video.snippet.description}</p>}
             </div>
         </div>
      );
