@@ -25,14 +25,26 @@ const VideoPage = (props) => {
 
     return ( 
         <div className="container-fluid">
-            <button onClick={()=> getVideo()}>Get Video By Id</button>
-            <VideoPlayer videoId={videoIdInPage} video={video}/>
-            <CommentForm videoId={videoIdInPage} video={video}/>
-            <CommentList videoId={videoIdInPage} video={video}/>
-            <RelatedVideos videoId={videoIdInPage} setVideoId={setVideoId}/>
+            <div className="player-comment">
+                <div className="player-container">
+                <VideoPlayer videoId={videoIdInPage} video={video}/> 
+                </div>
+                <div className="comment-container">
+                    <div className="comment-form">
+                    <CommentForm videoId={videoIdInPage} video={video}/>  
+                    </div>
+                    <div className="comments"><h3>Comments</h3>
+                    <CommentList videoId={videoIdInPage} video={video}/>
+                    </div>
+                </div>
+            </div>
+            <div className="related-videos">
+                <RelatedVideos videoId={videoIdInPage} setVideoId={setVideoId}/>
+            </div>
         </div>
      );
 }
  
 export default VideoPage;           
 
+/* <button onClick={()=> getVideo()}>Get Video By Id</button> */

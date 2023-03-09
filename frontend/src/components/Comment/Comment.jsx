@@ -7,14 +7,14 @@ const Comment = ({ comment }) => {
     return ( 
         <div>
             <div>
-                <h4>{comment.username}: </h4>
+                <h4>{comment.user.username}: </h4>
                 <p>{comment.text}</p>
             </div>
             <div>
-                <ReplyList comment_id = {comment.id}/>
+                <ReplyForm comment_id={comment.id}/> 
             </div>
             <div>
-                <ReplyForm comment_id={comment.id}/>  
+                <ReplyList comment_id = {comment.id}/> 
             </div>
         </div>
      );

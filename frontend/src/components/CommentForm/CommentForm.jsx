@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState} from 'react';
 import useAuth from "../../hooks/useAuth";
+import './CommentForm.css';
 
 //Form to create a new comment to a video
 const CommentForm = ({ videoId }) => {
@@ -29,9 +30,9 @@ const CommentForm = ({ videoId }) => {
 
     return ( 
         <form onSubmit={handleSubmit} className='comment-form'>
-            <label><h4>Comment</h4></label>
-            <div>
-                <input value={comment} onChange={(event) => setComment(event.target.value)}/>
+            <label><h2>Post a Comment</h2></label>
+            <div className="post-input">
+                <input className='input' value={comment} onChange={(event) => setComment(event.target.value)}/>
                 <button type='submit' className="comment-btn" onClick={refresh}>Post Comment</button>
             </div>
         </form>

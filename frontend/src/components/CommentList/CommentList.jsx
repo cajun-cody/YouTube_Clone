@@ -1,6 +1,7 @@
 import Comment from "../Comment/Comment";
 import axios from "axios";
 import { useState, useEffect } from 'react';
+import './CommentList.css';
 
 //Component to perform a GET and display a list of comments of a video
 const CommentList = ({videoId}) => {
@@ -19,7 +20,7 @@ const CommentList = ({videoId}) => {
 
 
     return ( 
-        <div>
+        <div className="comment-list">
             {comments&&comments.map( item => <Comment key={item.id}comment={item}/>)}
         </div>
 

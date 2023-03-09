@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import VideoPresenter from "../VideoPresenter/VideoPresenter";
-
+import "./RelatedVideos.css";
 
 
 
@@ -24,7 +24,6 @@ const RelatedVideos = ({ videoId, setVideoId }) => {
 
     return ( 
         <div className="related-vids">
-            <button onClick={() => getRelatedVideos()}>Related Videos</button>
             {relatedVideos.map( item => <Link to={`/video/${item.id.videoId}`} onClick={() => setVideoId(item.id.videoId)}>
             <VideoPresenter dontShowDescription video={item}/>
             </Link>)}
@@ -34,5 +33,5 @@ const RelatedVideos = ({ videoId, setVideoId }) => {
  
 export default RelatedVideos;
 
-
+/* <button onClick={() => getRelatedVideos()}>Related Videos</button> */
 
