@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import './SearchBar.css';
 
 
 //Component to allow a user to search for a video
@@ -13,9 +14,9 @@ const SearchBar = ({getVideos, search, setSearch}) => {
     /* useEffect(() => getVideos(), [search]) */
 
     return ( 
-        <form onSubmit={handlesubmit}>
-            <input type='search' onChange={(event) => setSearch(event.target.value)} value={search}/>
-            <button type='submit'>Search</button>
+        <form className="search-container" onSubmit={handlesubmit}>
+            <input className='search-input'type='search' onChange={(event) => setSearch(event.target.value)} value={search}/>
+            <button type='submit' className="search-btn">Search</button>
         </form>
      );
 }

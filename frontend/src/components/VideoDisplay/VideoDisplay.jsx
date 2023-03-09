@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import VideoPresenter from "../VideoPresenter/VideoPresenter";
 import { Link } from "react-router-dom";
-
+import './VideoDisplay.css';
 
 //Component to map over searched videos
 //Mapper will put each video item in a list
@@ -184,10 +184,13 @@ const VideoDisplay = ({videos,setVideos}) => {
 
 
 return(
-    <div>
-        {videos.map( item => <Link to={`/video/${item.id.videoId}`} onClick={() => setVideos(item.id.videoId)}>
+    <div className="grid-container">
+        <div className="grid-thumbnail">
+            {videos.map( item => <Link to={`/video/${item.id.videoId}`} onClick={() => setVideos(item.id.videoId)}>
             <VideoPresenter video={item}/>
-            </Link>)}
+            </Link>)}   
+        </div>
+
     </div>
 )
 };

@@ -19,10 +19,12 @@ p {
 
 button {
   background-color: transparent;
-  border: 2px solid steelblue;
-  color: steelblue;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 1rem;
   font-family: inherit;
+  font-style: italic;
+  font-weight: 700;
   max-width: 100px;
   padding: 0.5rem 0.5rem;
 }
@@ -46,6 +48,7 @@ button:hover {
   flex-direction: column;
   justify-content: flex-end;
   gap: 1rem;
+  font-style: italic;
 }
 
 .form input {
