@@ -33,7 +33,7 @@ const VideoPage = (props) => {
                     <div className="comment-form">
                     <CommentForm videoId={videoIdInPage} video={video}/>  
                     </div>
-                    <div className="comments"><h3>Comments</h3>
+                    <div className="comments-sec"><h3 className="h3">Comments</h3>
                     <CommentList videoId={videoIdInPage} video={video}/>
                     </div>
                 </div>

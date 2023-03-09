@@ -2,7 +2,7 @@ import Reply from "../Reply/Reply";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import useAuth from "../../hooks/useAuth";
-
+import './ReplyList';
 
 //Component to display replies to a comment
 const ReplyList = ({comment_id}) => {
@@ -22,7 +22,7 @@ const ReplyList = ({comment_id}) => {
     }, [])
 
     return ( 
-        <div>
+        <div className="reply-list">
             {replies&&replies.map( item => <Reply key={item.id} reply={item}/>)}
         </div>
      );

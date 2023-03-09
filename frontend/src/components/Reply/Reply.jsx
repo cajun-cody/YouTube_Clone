@@ -1,12 +1,12 @@
-
+import './Reply.css';
 
 //Component to display a reply to a comment
 const Reply = ({ reply }) => {
     return ( 
         <div>
             <div>
-                <h4>{reply.username}: </h4>
-                <p>{reply.text}</p>
+                <h4>{reply.user.username} replied: </h4>
+                <p className="replies">{reply.text}</p>
             </div>
         </div>
      );

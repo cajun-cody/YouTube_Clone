@@ -11,6 +11,7 @@
 html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  background-color: rgb(231, 231, 231);
 }
 
 p {
@@ -40,6 +41,7 @@ button:hover {
   max-width: 600px;
   overflow: auto;
   text-align: center;
+
 }
 
 .form {

@@ -18,9 +18,11 @@
     margin-top: 30px;
 }
 
-.comments{
+.comments-sec{
     width: inherit;
+    border-style: double;
 }
+
 
 
 .related-videos{

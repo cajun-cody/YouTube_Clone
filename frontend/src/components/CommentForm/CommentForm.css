@@ -5,6 +5,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-style: double;
+    box-shadow: 2px 2px 5px black;
 }
 
 .post-input{

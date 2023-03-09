@@ -1,0 +1,24 @@
+
+
+.reply-form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.reply-input{
+    width: 70%;
+    align-items: center;
+}
+
+
+
+.reply-btn{
+    margin-left: 5px;
+    text-shadow: 2px 2px 5px red;
+    box-shadow: 2px 2px 5px red;
+    font-style: italic;
+    width:120px;
+    
+}

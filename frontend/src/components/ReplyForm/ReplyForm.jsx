@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import useAuth from "../../hooks/useAuth";
+import './ReplyForm.css';
 
 //Form to create a new reply to a comment
 const ReplyForm = ({comment_id}) => {
@@ -27,10 +28,10 @@ const ReplyForm = ({comment_id}) => {
 
     return ( 
         <form onSubmit={handleSubmit} className='reply-form'>
-           <label><h4>Reply</h4></label>
-           <div>
-            <input value={reply} onChange={(event) => setReply(event.target.value)}/>
-            <button type='submit' className="reply-btn" onClick={refresh}>Post Reply</button>
+           <label><h4></h4></label>
+           <div className="reply">
+                <input className="reply-input" value={reply} onChange={(event) => setReply(event.target.value)}/>
+                <button type='submit' className="reply-btn" onClick={refresh}>Post Reply</button>
            </div>
         </form>
      );
