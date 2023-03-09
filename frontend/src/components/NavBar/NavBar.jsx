@@ -12,7 +12,7 @@ const Navbar = () => {
       <ul>
         <li className="brand">
           <Link to="/search" style={{ textDecoration: "none", color: "white" }}>
-            <h1><small class='text-muted'>Roux</small>Tube</h1>
+            <h1><small className='text-muted'>Roux</small>Tube</h1>
           </Link>
         </li>
         <li>

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import axios from "axios";
 import { Link } from "react-router-dom";
-/* import Assets from "./Assets"; */
+import './HomePage.css';
 
 
 const HomePage = () => {
@@ -32,16 +32,18 @@ const HomePage = () => {
     <div className="container">
       <h1 class="font-italic">Welcome to RouxTube {user.username}!</h1>
       <h3>Click below to see what's cookin!!</h3>
-      <button type="button">
-        <img src="GumboPot.png" alt="pot" />
-      </button>
+      <Link to='/search'>
+        <button className='pot-btn' type="button">
+        <h2 class='pot-btn-text'>Click Me!</h2>
+        </button>
+      </Link>
     </div>
 
   );
 };
 
 export default HomePage;
-
+/* <img src="GumboPot.png" alt="pot" /> */
 
       // {cars &&
       //   cars.map((car) => (
