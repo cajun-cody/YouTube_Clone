@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "6eed1ded-8f28-4875-9fba-ce5f06e549b2",
+		"name": "Youtube Frontend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20742548"
+	},
+	"item": [
+		{
+			"name": "Search for Videos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?q=cajun food&type=video&key=AIzaSyDK84QLK5efmAEb9qPKEjNS5Tvy4KVFRek&maxResults=5&part=snippet",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "cajun food"
+						},
+						{
+							"key": "type",
+							"value": "video"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyDK84QLK5efmAEb9qPKEjNS5Tvy4KVFRek"
+						},
+						{
+							"key": "maxResults",
+							"value": "5"
+						},
+						{
+							"key": "part",
+							"value": "snippet"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search for Related Videos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/search?relatedToVideoId=W6NZfCO5SIk&type=video&key=AIzaSyDK84QLK5efmAEb9qPKEjNS5Tvy4KVFRek&part=snippet&maxResults=4",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"search"
+					],
+					"query": [
+						{
+							"key": "relatedToVideoId",
+							"value": "W6NZfCO5SIk"
+						},
+						{
+							"key": "type",
+							"value": "video"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyDK84QLK5efmAEb9qPKEjNS5Tvy4KVFRek"
+						},
+						{
+							"key": "part",
+							"value": "snippet"
+						},
+						{
+							"key": "maxResults",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Video by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.googleapis.com/youtube/v3/videos?id=W6NZfCO5SIk&key=AIzaSyDK84QLK5efmAEb9qPKEjNS5Tvy4KVFRek&maxResults=5&part=snippet",
+					"protocol": "https",
+					"host": [
+						"www",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"youtube",
+						"v3",
+						"videos"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "W6NZfCO5SIk"
+						},
+						{
+							"key": "key",
+							"value": "AIzaSyDK84QLK5efmAEb9qPKEjNS5Tvy4KVFRek"
+						},
+						{
+							"key": "maxResults",
+							"value": "5"
+						},
+						{
+							"key": "part",
+							"value": "snippet"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

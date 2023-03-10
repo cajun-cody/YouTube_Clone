@@ -30,6 +30,8 @@ button {
   font-weight: 700;
   max-width: 100px;
   padding: 0.5rem 0.5rem;
+  text-shadow: 2px 2px 5px red;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 button:hover {

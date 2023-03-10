@@ -56,7 +56,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"dantheman\",\r\n    \"password\": \"password1@\"\r\n}",
+							"raw": "{\r\n    \"username\": \"cdugas1\",\r\n    \"password\": \"Password123!\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -240,7 +240,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/comments/vid001/",
+							"raw": "http://127.0.0.1:8000/api/comments/W6NZfCO5SIk/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -252,7 +252,7 @@
 							"path": [
 								"api",
 								"comments",
-								"vid001",
+								"W6NZfCO5SIk",
 								""
 							]
 						}
@@ -267,7 +267,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc3NTE0NjA0LCJpYXQiOjE2NzY2NTA2MDQsImp0aSI6IjJmZmY0YmJmNzliYzQxMzRiMDY1ZDE3ZjA3NGM4MmVmIiwidXNlcl9pZCI6NCwidXNlcm5hbWUiOiJkYW50aGVtYW4iLCJmaXJzdF9uYW1lIjoiRGFuaWVsIn0.luWo8Vmh9OsvuvZvjutrIdNyfd4ZRCfYDY21ovH_XoA",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc5NjQ2LCJpYXQiOjE2NzgyMTU2NDYsImp0aSI6IjUwODQxNTBiNGE1OTQ0YWQ4YWZmMTZmOWJkN2Q3MzVjIiwidXNlcl9pZCI6MiwidXNlcm5hbWUiOiJjZHVnYXMxIiwiZmlyc3RfbmFtZSI6IkNvZHkifQ.bcAJXMzIzlEiKpyvpZTYlVyXvnWwPj79xmCEnrN9a_4",
 									"type": "string"
 								}
 							]
@@ -282,7 +282,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"video_id\": \"vid003\",\r\n    \"text\": \"Wowt.\",\r\n    \"likes\": 0,\r\n    \"dislikes\": 0\r\n}",
+							"raw": "{\r\n    \"video_id\": \"W6NZfCO5SIk\",\r\n    \"text\": \"Wow\",\r\n    \"likes\": 0,\r\n    \"dislikes\": 0\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -399,6 +399,16 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc4NzM1MDkwLCJpYXQiOjE2Nzc4NzEwOTAsImp0aSI6IjJlMDQwZjEyNzk5YjRhNzA5MjUyMWU2NGNiYzQ3NWE2IiwidXNlcl9pZCI6MiwidXNlcm5hbWUiOiJjZHVnYXMxIiwiZmlyc3RfbmFtZSI6IkNvZHkifQ.hn2yexOCMiuDCT9DzLzmxUEOq83ZGs780CfOBbMQ1bc",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [
 							{
@@ -417,7 +427,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/replies/comment_id/2",
+							"raw": "http://127.0.0.1:8000/api/replies/comment_id/10",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -430,7 +440,7 @@
 								"api",
 								"replies",
 								"comment_id",
-								"2"
+								"10"
 							]
 						}
 					},
@@ -443,7 +453,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc3NTE0NjA0LCJpYXQiOjE2NzY2NTA2MDQsImp0aSI6IjJmZmY0YmJmNzliYzQxMzRiMDY1ZDE3ZjA3NGM4MmVmIiwidXNlcl9pZCI6NCwidXNlcm5hbWUiOiJkYW50aGVtYW4iLCJmaXJzdF9uYW1lIjoiRGFuaWVsIn0.luWo8Vmh9OsvuvZvjutrIdNyfd4ZRCfYDY21ovH_XoA",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc5MDc5NjQ2LCJpYXQiOjE2NzgyMTU2NDYsImp0aSI6IjUwODQxNTBiNGE1OTQ0YWQ4YWZmMTZmOWJkN2Q3MzVjIiwidXNlcl9pZCI6MiwidXNlcm5hbWUiOiJjZHVnYXMxIiwiZmlyc3RfbmFtZSI6IkNvZHkifQ.bcAJXMzIzlEiKpyvpZTYlVyXvnWwPj79xmCEnrN9a_4",
 								"type": "text"
 							}
 						],
@@ -457,7 +467,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/replies/post_reply/2/",
+							"raw": "http://127.0.0.1:8000/api/replies/post_reply/10/",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -470,7 +480,7 @@
 								"api",
 								"replies",
 								"post_reply",
-								"2",
+								"10",
 								""
 							]
 						}
