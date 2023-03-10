@@ -12,7 +12,7 @@ const Comment = ({ comment }) => {
                 <p className="comments">{comment.text}</p>
             </div>
             <div>
-                <div>
+                <div className="reply-list">
                     <ReplyList comment_id = {comment.id}/>
                 </div>
                 <div>
