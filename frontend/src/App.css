@@ -12,6 +12,7 @@ html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   background-color: rgb(231, 231, 231);
+  margin-bottom: 100px;
 }
 
 p {

@@ -14,6 +14,7 @@ const VideoPage = (props) => {
     const {videoId} = useParams();
     const [videoIdInPage, setVideoId] = useState(videoId)
     const [video, setVideo] = useState()
+    
 
     async function getVideo() {
         let response = await axios.get(`https://www.googleapis.com/youtube/v3/videos?id=${videoIdInPage}&key=AIzaSyDK84QLK5efmAEb9qPKEjNS5Tvy4KVFRek&maxResults=5&part=snippet`);

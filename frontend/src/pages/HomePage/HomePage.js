@@ -30,7 +30,7 @@ const HomePage = () => {
   }, [token]);
   return (
     <div className="container">
-      <h1 class="font-italic">Welcome to RouxTube {user.username}!</h1>
+      <h1 className="home-welcome">Welcome to RouxTube {user.username}!</h1>
       <h3>Click below to see what's cookin!!</h3>
       <Link to='/search'>
         <button className='pot-btn' type="button">

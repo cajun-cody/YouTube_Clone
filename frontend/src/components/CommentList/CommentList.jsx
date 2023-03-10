@@ -14,9 +14,10 @@ const CommentList = ({videoId}) => {
         console.log(response.data)
     }
  
+    //Added videoId to bring in comments only related to the chosen video. 
    useEffect(() => {
         getAllComments();
-    }, [])    
+    }, [videoId])    
 
 
     return ( 

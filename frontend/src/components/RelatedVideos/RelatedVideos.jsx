@@ -10,6 +10,7 @@ import "./RelatedVideos.css";
 const RelatedVideos = ({ videoId, setVideoId }) => {
 
     const [relatedVideos, setRelatedVideos] = useState([]);
+    const refresh = () => window.location.reload(true);
 
     async function getRelatedVideos() {
         let response = await axios.get(`https://www.googleapis.com/youtube/v3/search?relatedToVideoId=${videoId}&type=video&key=AIzaSyDK84QLK5efmAEb9qPKEjNS5Tvy4KVFRek&part=snippet&maxResults=4`);
@@ -24,7 +25,7 @@ const RelatedVideos = ({ videoId, setVideoId }) => {
 
     return ( 
         <div className="related-vids">
-            {relatedVideos.map( item => <Link to={`/video/${item.id.videoId}`} onClick={() => setVideoId(item.id.videoId)}>
+            {relatedVideos.map( item => <Link to={`/video/${item.id.videoId}`} onClick={() => setVideoId(item.id.videoId)} >
             <VideoPresenter dontShowDescription video={item}/>
             </Link>)}
         </div>

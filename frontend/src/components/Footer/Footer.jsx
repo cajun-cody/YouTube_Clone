@@ -3,7 +3,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <p></p>{" "}
+      <p>Powered by The Backward Cajun</p>{" "}
     </footer>
   );
 };
