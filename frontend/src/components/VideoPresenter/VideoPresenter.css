@@ -2,7 +2,7 @@
 .grid-presenter{
     display: grid;
     padding: 8px;
-
+    max-width: 350px;
 
 }
 
